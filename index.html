@@ -21,11 +21,6 @@
   overflow: hidden;
 }
 
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
 
 .section-title {
   font-size: 2rem;
@@ -75,6 +70,40 @@ section {
   object-fit: cover;
   border-radius: 8px;
 }
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-caption h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Mobile specific fixes */
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 8px 10px;
+    max-width: 90%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
+}
+
 
 .navbar-brand span {
   font-size: 2rem;
@@ -91,22 +120,6 @@ section {
   height: 75vh;
   object-fit: cover;
 }
-
-/* ✅ Mobile Responsive Fix */
-@media (max-width: 768px) {
-  .carousel-item img {
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-  }
-
-  .carousel-caption h1 {
-    font-size: 1.3rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
 
   .carousel-caption {
     padding: 10px;
