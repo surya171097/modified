@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logitra Solutions Pvt. Ltd.</title>
+  <meta name="description" content="Reliable Road Freight Transportation for B2B. Logical and Transparent Logistics Solutions by Logitra Solutions Pvt. Ltd. Ahmedabad, Gujarat.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  section {
+  scroll-margin-top: 120px; 
+}
+
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: #0d6efd !important;
+    font-weight: 500;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 14px;
+    font-size: 24px;
+    z-index: 100;
+    text-decoration: none;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #0d6efd;
+    text-decoration: none;
+  }
+
+  section {
+    scroll-margin-top: 120px;
+  }
+
+
+  .card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+.navbar-brand span {
+  font-size: 2rem; /* Change this to your preferred size */
+  color: red;
+  font-weight: 800;
+  white-space: normal;
+  word-break: breakword;
+  text-align: centre;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: block !important;
+    text-align: center;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-item img {
+    height: 60vh; /* You can adjust this height if needed */
+    object-fit: cover;
+  }
+}
+.carousel-item img {
+  height: 75vh;
+  object-fit: cover;
+}
+
+
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="logo.jpg" alt="LOGITRA" style="height: 100px; width: 200px;" class="me-2">
+  <span>Logitra Solutions Pvt. Ltd.</span>
+</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Navbar ends here -->
+  <!-- Hero Slider -->
+<div id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="image1.png" class="d-block w-100 hero-img" alt="Slide 1">
+      <div class="carousel-caption caption-custom">
+        <h1>India's Fastest <strong>EXPRESS DELIVERY</strong> Service</h1>
+        <p>Reliable Road Freight Solutions for B2B Logistics</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="image2.png" class="d-block w-100 hero-img" alt="Slide 2">
+      <div class="carousel-caption caption-custom">
+        <h1>Logical & Transparent <strong>Logistics Services</strong></h1>
+        <p>On-Time Delivery with Real-Time Tracking</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="image3.png" class="d-block w-100 hero-img" alt="Slide 3">
+      <div class="carousel-caption caption-custom">
+        <h1>Expert <strong>Warehouse Management</strong></h1>
+        <p>Seamless Storage, Packaging & Inventory Control</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Tracking Section -->
+<div class="container py-4" id="tracking" data-aos="fade-up">
+  <h2 class="section-title">Track Your Consignment</h2>
+  
+  <!-- Input Group -->
+  <div class="input-group mb-3" style="max-width: 400px;">
+    <input type="text" id="docNumber" placeholder="Enter Document Number" onkeypress="checkEnter(event)" class="form-control" />
+    <button onclick="trackDocument()" class="btn btn-primary">Track</button>
+  </div>
+  
+  <!-- Result Section (moved outside input group to avoid layout shift) -->
+  <div id="result" style="margin-top: 20px; font-family: sans-serif;"></div>
+</div>
+
+  <!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">About Us</h2>
+    <p>
+  <strong style="color: red;">Logitra Solutions</strong> is a Service Company, incorporated as a Private Limited company in 
+  <span style="color: #117A65; font-weight: bold;">May 2011</span> to serve its customers their futuristic Logistics need, Consultancy and help Cost Savings. 
+  Also specializes in providing logical and transparent logistics solutions tailored for B2B businesses. 
+  We ensure timely and reliable road freight services across India.
+</p>
+
+    <div class="mt-4">
+      <h4 style="color: orange;">Our Mission</h4>
+      <p>To become 100% growth oriented services conglomerate of pride people always in action for solutions of service related problems of logistics and transport industry as a whole, and remain in leading role always. While doing so not to forget human dignity and believe in service with smile to maintain customers scarcity about its services. To meet the challenges and particularly customers demand in the various industrial clusters and evolve itself to meet those challenges in coming years.</p>
+
+      <h4 style="color: orange;">Our Vision</h4>
+      <p>Logitra Solutions is more a solution providing commercial conglomerate of skilled people of where everyone has placed to serve the customers best so that to maintain their scarcity about companies products and services forever. While doing so Logitra pledges to also maintain the enthusiasm of its employees, stakeholders, service partners and suppliers. At logitra we believe in strengthening the relationships as it takes time to build them and once built it must be enjoyed by generations.</p>
+
+      <h4 style="color: orange;">Quality Policy</h4>
+      <p>Logitra Solutions working as bridge between businesses pledges always to provide best quality of services of world class industries into this field and thus adopt and act with new ideas and equipments to match the best in the industry.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row text-center">
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="surface.JPG" class="card-img-top" alt="Surface Express">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Surface Express</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="air.JPG" class="card-img-top" alt="Air Express">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Air Express</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="demand.JPG" class="card-img-top" alt="Managing Demand Chain">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Managing Demand Chain</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="pl.JPG" class="card-img-top" alt="3PL & 4PL Management">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">3PL & 4PL Management</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="cold.JPG" class="card-img-top" alt="Cold chain Logistics">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Cold chain Logistics</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="e.JPG" class="card-img-top" alt="E-Consultancy">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">E-Consultancy</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="real.JPG" class="card-img-top" alt="Real-Time Tracking">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Real-Time Tracking</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-4">
+    <div class="card border-danger">
+      <img src="customer.JPG" class="card-img-top" alt="Customer Support">
+      <div class="card-body bg-light">
+        <h5 class="card-title text-danger">Customer Support</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+<!-- WHY CHOOSE US SECTION -->
+<section id="why-choose-us" style="background-color: #1d1d1d; color: white; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center;">
+    <!-- Left content -->
+    <div style="flex: 1 1 500px; padding: 20px;">
+      <h2 style="color: white; border-left: 5px solid #2196f3; padding-left: 10px;">WHY CHOOSE US</h2>
+      <p style="margin-top: 20px; line-height: 1.8;">
+        As an acknowledged industry pioneer, Logitra Solutions has always stood by its core value of trust and integrity, delivering excellence to customers across the nation. We are driven by customer needs and leverage technology and service to set ourselves apart.
+      </p>
+      <ul style="list-style: none; padding: 0; margin-top: 30px;">
+        <li style="margin-bottom: 15px;">🚚 Best Delivery Service in the country</li>
+        <li style="margin-bottom: 15px;">👥 Customer-centric approach</li>
+        <li style="margin-bottom: 15px;">🖥️ Advanced logistics technology system</li>
+      </ul>
+    </div>
+
+    <!-- Right image -->
+    <div style="flex: 1 1 500px; padding: 20px; text-align: center;">
+      <img src="chooseus.png" alt="Why Choose Us" style="width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.3);">
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:pramod.logitra@gmail.com">pramod.logitra@gmail.com</a></p>
+      <p><strong>Location:</strong> Ahmedabad, Gujarat, India</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1BFqG2cmHP/" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/abcd" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/abcd" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/917990797131" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 PKS Logi Solutions Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp-float" href="https://wa.me/917990797131" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+  function trackDocument() {
+    const docNumber = document.getElementById('docNumber').value.trim();
+    if (!docNumber) {
+      alert("Please enter a document number");
+      return;
+    }
+
+    const url = `https://script.google.com/macros/s/AKfycbxSnCqDcDXHgfN-snoxA51YgEvQnGstqsn8mp6Hy_QeRVMyPsibwEfhRDospqnG7vyILQ/exec?doc=${encodeURIComponent(docNumber)}`;
+
+    fetch(url)
+      .then(res => res.text())
+      .then(text => {
+        let resultDiv = document.getElementById('result');
+        try {
+          const data = JSON.parse(text);
+          resultDiv.innerHTML = `
+            <strong>Status:</strong> ${data.status}<br>
+            <strong>Dispatched At:</strong> ${data.dispatched_at}<br>
+            <strong>From:</strong> ${data.from}<br>
+            <strong>Current Location:</strong> ${data.current_location}<br>
+            <strong>Destination:</strong> ${data.destination}<br>
+            <strong>Expected Delivery:</strong> ${data.expected_delivery}
+          `;
+        } catch {
+          resultDiv.innerHTML = `<span style="color:red;">${text}</span>`;
+        }
+      })
+      .catch(err => {
+        document.getElementById('result').innerHTML = "Error fetching data.";
+        console.error(err);
+      });
+  }
+
+  function checkEnter(e) {
+    if (e.key === "Enter") {
+      trackDocument();
+    }
+  }
+</script>
+
+</body>
+</html>
